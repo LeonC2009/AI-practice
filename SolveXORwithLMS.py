@@ -16,7 +16,7 @@ class XORNET(nn.Module):
         x = self.sigmoid(self.output(x))
         return x
 
-model = XORNet()
+model = XORNET()
 criterion = nn.MSELoss()
 
 optimizer = optim.Adam(model.parameters(), lr=0.1)
